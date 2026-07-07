@@ -236,9 +236,13 @@ npm run dev
 
 ## Live Deployment
 
-🔗 **Deployed Website:**
+🔗 **Frontend (Vercel):**
 
-> _Coming soon — update this link after deployment_
+> https://route-optimizer-gray.vercel.app
+
+🔗 **Backend API (Render):**
+
+> https://route-optimizer-toaj.onrender.com
 
 ---
 
