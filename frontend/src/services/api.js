@@ -148,10 +148,13 @@ export const getRouteSummary = async (optimizedResult, locations) => {
     }
 
     const orderedRoute = optimizedResult.optimized_route.map((name, index) => {
-      const loc = locations.find(l => l.name === name);
+      const loc = locations.find(
+        l => l.name.toLowerCase() === name.toLowerCase()
+      );
 
       if (!loc) {
-        throw new Error(`Location not found for ${name}`);
+        console.warn(`Location not found for "${name}", skipping.`);
+        return null;
       }
 
       return {
@@ -163,7 +166,7 @@ export const getRouteSummary = async (optimizedResult, locations) => {
     });
 
     const payload = {
-      optimized_route: orderedRoute,
+      optimized_route: orderedRoute.filter(Boolean),
       total_distance_km: optimizedResult.total_distance_km || 0,
       total_duration_hours: optimizedResult.total_duration_hours || 0,
       weather_alerts: optimizedResult.weather_alerts || [],

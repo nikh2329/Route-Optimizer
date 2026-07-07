@@ -219,7 +219,7 @@ This GA-based approach ensures LogiBot generates **near-optimal, scalable, and a
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-usernam/logibot
+git clone https://github.com/nikh2329/Route-Optimizer
 
 # Start the backend server
 uvicorn main:app --reload
@@ -238,15 +238,15 @@ npm run dev
 
 🔗 **Deployed Website:**
 
-> https://route-optimization-frontend-16zh.onrender.com
+> _Coming soon — update this link after deployment_
 
 ---
 
-## Demo Video (Mandatory)
+## Demo Video
 
 **Live Demo Walkthrough:**
 
-> https://drive.google.com/file/d/1QuUI0nkZcowPWTJgDHKHihrkP_daNXwy/view?usp=sharing
+> _Add your demo video link here_
 
 The demo showcases:
 
